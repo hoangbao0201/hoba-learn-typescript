@@ -1,0 +1,43 @@
+.button-mode {
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    display: block;
+
+    transition: 0.4s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.icons {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        fill: #000;
+        width: 24px;
+        display: block;
+    }
+}
+
+.input-toggle {
+    display: none;
+}
+
+// Dark mode
+
+.dark {
+    &.button-mode:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+    .icons {
+        svg {
+            fill: #ffff;
+        }
+    }
+}

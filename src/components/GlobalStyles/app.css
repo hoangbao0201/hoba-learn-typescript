@@ -1,0 +1,64 @@
+/* Scroll */
+
+.dev-scroll {
+    overflow-y: scroll;
+}
+
+.dev-scroll::-webkit-scrollbar {
+    position: absolute;
+    width: 9px;
+}
+
+.dev-scroll::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.dev-scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #757575;
+}
+
+/* Form */
+
+.dev-form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dev-form-tilte {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dev-form-tilte label {
+    cursor: pointer;
+}
+
+.dev-form-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 17px;
+
+    transition: 0.1s;
+}
+
+.dev-form-input:hover {
+    border: 1px solid #ddd;
+}
+
+.dev-form-input:focus {
+    border: 1px solid rgb(59 73 223);
+    box-shadow: 0px 0px 0px 1px rgb(59 73 223);
+}
+
+/* Button */
+
+.dev-button-auto {
+    width: 100%;
+}
