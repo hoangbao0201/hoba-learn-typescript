@@ -1,11 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
 
+import { Footer } from "./components/layouts/Footer/Footer";
 import { Header } from "./components/layouts/Header/Header";
 import publicRouter from "./routes";
-
-interface RouteProps {
-    component: JSX.Element;
-}
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         );
                     })}
                 </Routes>
+                <Footer />
             </div>
         </Router>
     );

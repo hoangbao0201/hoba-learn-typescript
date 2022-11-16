@@ -1,11 +1,22 @@
 import classNames from "classnames/bind";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useContext, useState } from "react";
 import { Button } from "../../components/GlobalStyles/LayoutStyles";
+import { ThemeContext } from "../../context/ThemeContext";
+import {
+    iconFacebook,
+    iconGithub,
+    iconGoogle,
+    iconHideEye,
+    iconShowEye,
+} from "../../.public/iconSvg";
 import styles from "./Register.module.scss";
 
 const cx = classNames.bind(styles);
 
 export const Register = () => {
+    const { state } : any = useContext(ThemeContext);
+
+    const [isShow, setIsShow] = useState<boolean>(false);
     const [dataForm, setDataForm] = useState({
         name: "",
         username: "",
@@ -20,63 +31,111 @@ export const Register = () => {
         });
     };
 
+    const eventSubmitForm = (e: SubmitEvent) => {
+        e.preventDefault();
+        console.log(dataForm);
+    };
+
     return (
-        <div className={cx("wrapper")}>
+        <div className={cx("wrapper", `${state.dark && "dark"}`)}>
             <div className={cx("container")}>
                 <form className={cx("form")}>
+                    <div className={cx("grid-logo")}>
+                        <img
+                            className={cx("image-logo")}
+                            src="/images/logo-hb.png"
+                        />
+                    </div>
+                    <Button
+                        bg="#df4930"
+                        bgHv="#cd452e"
+                        color="#ffff"
+                        size="15px"
+                    >
+                        <i className={cx("button-icon")}>{iconGoogle}</i>
+                        Continute width Google
+                    </Button>
+                    <Button size="15px">
+                        <i className={cx("button-icon")}>{iconFacebook}</i>
+                        Continute width Facebook
+                    </Button>
+                    <Button bg="#24292e" bgHv="#000" size="15px">
+                        <i className={cx("button-icon")}>{iconGithub}</i>
+                        Continute width Github
+                    </Button>
+
+                    <div className={cx("devider-double")}></div>
+
                     <div className={cx("dev-form-group")}>
-                        <div className={cx("dev-form-tilte")}>
+                        <div className={cx("dev-form-tilte", "form-title")}>
                             <label htmlFor="inputFullname">Full Name</label>
                         </div>
                         <input
                             id="inputFullname"
-                            className={cx("dev-form-input")}
+                            className={cx("dev-form-input", "form-input")}
                             name="name"
                             value={dataForm.name}
                             onChange={eventChangeDataForm}
                         />
                     </div>
                     <div className={cx("dev-form-group")}>
-                        <div className={cx("dev-form-tilte")}>
+                        <div className={cx("dev-form-tilte", "form-title")}>
                             <label htmlFor="inputUsername">Username</label>
                         </div>
                         <input
                             id="inputUsername"
-                            className={cx("dev-form-input")}
+                            className={cx("dev-form-input", "form-input")}
                             name="username"
                             value={dataForm.username}
                             onChange={eventChangeDataForm}
                         />
                     </div>
                     <div className={cx("dev-form-group")}>
-                        <div className={cx("dev-form-tilte")}>
+                        <div className={cx("dev-form-tilte", "form-title")}>
                             <label htmlFor="inputPassword">Password</label>
                         </div>
-                        <input
-                            id="inputPassword"
-                            className={cx("dev-form-input")}
-                            name="password"
-                            type="password"
-                            value={dataForm.password}
-                            onChange={eventChangeDataForm}
-                        />
+                        <div className={cx("dev-form-grid-input")}>
+                            <input
+                                id="inputPassword"
+                                className={cx("dev-form-input", "form-input")}
+                                name="password"
+                                type={isShow ? "text" : "password"}
+                                value={dataForm.password}
+                                onChange={eventChangeDataForm}
+                            />
+                            {dataForm.password.length > 0 && (
+                                <div
+                                    className={cx("icon-eye-password")}
+                                    onClick={() => setIsShow((value) => !value)}
+                                >
+                                    {!isShow ? iconHideEye : iconShowEye}
+                                </div>
+                            )}
+                        </div>
                     </div>
                     <div className={cx("dev-form-group")}>
-                        <div className={cx("dev-form-tilte")}>
+                        <div className={cx("dev-form-tilte", "form-title")}>
                             <label htmlFor="inputRePassword">
                                 Confirm Password
                             </label>
                         </div>
                         <input
                             id="inputRePassword"
-                            className={cx("dev-form-input")}
+                            className={cx("dev-form-input", "form-input")}
                             name="rePassword"
-                            type="password"
+                            type={isShow ? "text" : "password"}
                             value={dataForm.rePassword}
                             onChange={eventChangeDataForm}
                         />
                     </div>
-                    <Button size="17px">Continue</Button>
+                    <Button
+                        bg="#1da1f2"
+                        bgHv="#0096f2"
+                        size="15px"
+                        onClick={eventSubmitForm}
+                    >
+                        Continute
+                    </Button>
                 </form>
             </div>
         </div>

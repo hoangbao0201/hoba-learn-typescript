@@ -24,6 +24,7 @@
 .dev-form-group {
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .dev-form-tilte {
@@ -37,9 +38,15 @@
     cursor: pointer;
 }
 
+.dev-form-grid-input {
+    position: relative;
+    width: 100%;
+}
+
 .dev-form-input {
     width: 100%;
-    padding: 10px 15px;
+    height: 43px;
+    padding: 10px 40px 10px 15px;
     border-radius: 4px;
     outline: none;
     border: 1px solid #ccc;
@@ -55,6 +62,15 @@
 .dev-form-input:focus {
     border: 1px solid rgb(59 73 223);
     box-shadow: 0px 0px 0px 1px rgb(59 73 223);
+}
+
+/* Form row */
+
+.dev-form-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Button */

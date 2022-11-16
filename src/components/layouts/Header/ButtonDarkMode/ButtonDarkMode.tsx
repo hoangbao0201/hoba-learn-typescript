@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../../context/ThemeContext";
-import { iconMoon, iconSun } from "../../../../public/iconSvg";
+import { iconMoon, iconSun } from "../../../../.public/iconSvg";
 import styles from "./ButtonDarkMode.module.scss";
 
 const cx = classNames.bind(styles);

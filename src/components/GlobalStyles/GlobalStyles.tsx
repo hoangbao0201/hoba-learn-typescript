@@ -1,7 +1,8 @@
 import classNames from 'classnames/bind'
 import styles from './GlobalStyles.module.scss';
 import "./app.css"
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const cx = classNames.bind(styles);
 
@@ -10,9 +11,10 @@ interface GlobalStylesProps {
 }
 
 export const GlobalStyles = ({ children } : GlobalStylesProps) => {
-    const dark = false;
+    const { state }: any = useContext(ThemeContext);
+
     return (
-       <div className={cx('wrapper', `${!!dark || "dark"}`)}>
+       <div className={cx('wrapper', `${!!state.dark && "dark"}`)}>
             {children}
        </div>
    )

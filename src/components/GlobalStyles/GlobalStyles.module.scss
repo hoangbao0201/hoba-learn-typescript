@@ -1,4 +1,45 @@
+
+:root {
+
+    --header-height: 65px;
+
+    --text-color-light: rgb(0, 0, 0);
+    --text-color-dark: rgba(255, 255, 255, 0.5);
+
+    --text-title-color-light: #000;
+    --text-title-color-dark: #eaeded;
+
+    --color-hover-light: rgba(0, 0, 0, 0.03);
+    --color-hover-dark: rgba(255, 255, 255, 0.03);
+
+    --bg-color-light: #ffff;
+    --bg-color-dark-height: #303030;
+    --bg-color-dark-short: #242526;
+
+    --bg-form-color-light: #ffff;
+    --bg-form-color-dark: #21252c;
+
+    --header-color-dark: #232f3e;
+    --footer-color-dark: #232f3e;
+
+}
+
+// Card
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.wrapper {
+    transition: 0.2s;
+}
+
+.dark {
+    background-color: #16191f;
 }
