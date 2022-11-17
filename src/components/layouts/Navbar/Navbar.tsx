@@ -38,257 +38,257 @@ const dataListItem = [
             {
                 title: "Tất cả",
                 link: "/",
-                status: "all"
+                status: "all",
             },
             {
                 title: "Action",
                 link: "/",
-                status: "action"
+                status: "action",
             },
             {
                 title: "Adult",
                 link: "/",
-                status: "adult"
+                status: "adult",
             },
             {
                 title: "Adventure",
                 link: "/",
-                status: "adventure"
+                status: "adventure",
             },
             {
                 title: "Anime",
                 link: "/",
-                status: "anime"
+                status: "anime",
             },
             {
                 title: "Chuyển sinh",
                 link: "/",
-                status: "chuyen-sinh"
+                status: "chuyen-sinh",
             },
             {
                 title: "Comedy",
                 link: "/",
-                status: "comedy"
+                status: "comedy",
             },
             {
                 title: "Comic",
                 link: "/",
-                status: "comic"
+                status: "comic",
             },
             {
                 title: "Cooking",
                 link: "/",
-                status: "cooking"
+                status: "cooking",
             },
             {
                 title: "Cổ đại",
                 link: "/",
-                status: "co-dai"
+                status: "co-dai",
             },
             {
                 title: "Doujinshi",
                 link: "/",
-                status: "doujinshi"
+                status: "doujinshi",
             },
             {
                 title: "Drama",
                 link: "/",
-                status: "drama"
+                status: "drama",
             },
             {
                 title: "Ecchi",
                 link: "/",
-                status: "ecchi"
+                status: "ecchi",
             },
             {
                 title: "Fantasy",
                 link: "/",
-                status: "fantasy"
+                status: "fantasy",
             },
             {
                 title: "Gender Bender",
                 link: "/",
-                status: "gender-bender"
+                status: "gender-bender",
             },
             {
                 title: "Harem",
                 link: "/",
-                status: "harem"
+                status: "harem",
             },
             {
                 title: "Historical",
                 link: "/",
-                status: "historical"
+                status: "historical",
             },
             {
                 title: "Horror",
                 link: "/",
-                status: "horror"
+                status: "horror",
             },
             {
                 title: "Josei",
                 link: "/",
-                status: "josei"
+                status: "josei",
             },
             {
                 title: "Live Action",
                 link: "/",
-                status: "live-action"
+                status: "live-action",
             },
             {
                 title: "Manga",
                 link: "/",
-                status: "manga"
+                status: "manga",
             },
             {
                 title: "Mahua",
                 link: "/",
-                status: "mahua"
+                status: "mahua",
             },
             {
                 title: "Manhwa",
                 link: "/",
-                status: "manhwa"
+                status: "manhwa",
             },
             {
                 title: "Martial Arts",
                 link: "/",
-                status: "martial-arts"
+                status: "martial-arts",
             },
             {
                 title: "Mature",
                 link: "/",
-                status: "mature"
+                status: "mature",
             },
             {
                 title: "Mecha",
                 link: "/",
-                status: "mecha"
+                status: "mecha",
             },
             {
                 title: "Mystery",
                 link: "/",
-                status: "mystery"
+                status: "mystery",
             },
             {
                 title: "Ngôn Tình",
                 link: "/",
-                status: "ngon-tinh"
+                status: "ngon-tinh",
             },
             {
                 title: "One Shot",
                 link: "/",
-                status: "one-shot"
+                status: "one-shot",
             },
             {
                 title: "Psychological",
                 link: "/",
-                status: "psychological"
+                status: "psychological",
             },
             {
                 title: "Romance",
                 link: "/",
-                status: "romance"
+                status: "romance",
             },
             {
                 title: "School Life",
                 link: "/",
-                status: "school-life"
+                status: "school-life",
             },
             {
                 title: "Sci-fi",
                 link: "/",
-                status: "sci-fi"
+                status: "sci-fi",
             },
             {
                 title: "Seinen",
                 link: "/",
-                status: "seinen"
+                status: "seinen",
             },
             {
                 title: "Shoujo",
                 link: "/",
-                status: "shoujo"
+                status: "shoujo",
             },
             {
                 title: "Shoujo Ai",
                 link: "/",
-                status: "shoujo-ai"
+                status: "shoujo-ai",
             },
             {
                 title: "Shounen",
                 link: "/",
-                status: "shounen"
+                status: "shounen",
             },
             {
                 title: "Shounen Ai",
                 link: "/",
-                status: "shounen-ai"
+                status: "shounen-ai",
             },
             {
                 title: "Slice Of Life",
                 link: "/",
-                status: "slice-of-life"
+                status: "slice-of-life",
             },
             {
                 title: "Smut",
                 link: "/",
-                status: "smut"
+                status: "smut",
             },
             {
                 title: "Soft Yaoi",
                 link: "/",
-                status: "soft-yaoi"
+                status: "soft-yaoi",
             },
             {
                 title: "Soft Yuri",
                 link: "/",
-                status: "soft-yuri"
+                status: "soft-yuri",
             },
             {
                 title: "Sports",
                 link: "/",
-                status: "sports"
+                status: "sports",
             },
             {
                 title: "Supernatural",
                 link: "/",
-                status: "supernatural"
+                status: "supernatural",
             },
             {
                 title: "Thiếu nhi",
                 link: "/",
-                status: "thieu-nhi"
+                status: "thieu-nhi",
             },
             {
                 title: "Tragedy",
                 link: "/",
-                status: "tragedy"
+                status: "tragedy",
             },
             {
                 title: "Trinh thám",
                 link: "/",
-                status: "trinh-tham"
+                status: "trinh-tham",
             },
             {
                 title: "Truyện scan",
                 link: "/",
-                status: "truyen-scan"
+                status: "truyen-scan",
             },
             {
                 title: "Truyện màu",
                 link: "/",
-                status: "truyen-mau"
+                status: "truyen-mau",
             },
             {
                 title: "Webtoon",
                 link: "/",
-                status: "webtoon"
+                status: "webtoon",
             },
             {
                 title: "Xuyên Không",
                 link: "/",
-                status: "xuyen-khong"
+                status: "xuyen-khong",
             },
         ],
     },
@@ -300,7 +300,7 @@ const dataListItem = [
     {
         title: "Bộ sưu tập",
         icon: iconImage,
-        link: "/",
+        link: "/collection/images",
     },
 ];
 
@@ -330,7 +330,6 @@ export const Navbar = ({ isModalOpen, handleModalClose }: NavbarProps) => {
                 className={cx(
                     "wrapper",
                     "dev-scroll",
-                    `${state.dark && "dark"}`,
                     `${!!isModalOpen && "active"}`
                 )}
             >
@@ -346,12 +345,6 @@ export const Navbar = ({ isModalOpen, handleModalClose }: NavbarProps) => {
                         >
                             {iconClose}
                         </button>
-                    </div>
-                    <div className={cx("search")}>
-                        <input
-                            className={cx("search-input")}
-                            placeholder="Tìm kiếm"
-                        />
                     </div>
 
                     <div className={cx("list-item")}>
@@ -412,7 +405,9 @@ export const Navbar = ({ isModalOpen, handleModalClose }: NavbarProps) => {
                                                 `${isDropdown && "active"}`
                                             )}
                                         >
-                                            {listChildren}
+                                            <div className={cx("list-item")}>
+                                                {listChildren}
+                                            </div>
                                         </div>
                                     )}
                                 </div>

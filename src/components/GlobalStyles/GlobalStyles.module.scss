@@ -1,27 +1,47 @@
-
 :root {
-
     --header-height: 65px;
 
-    --text-color-light: rgb(0, 0, 0);
-    --text-color-dark: rgba(255, 255, 255, 0.5);
+    --text-color: rgba(0, 0 ,0 , 1);
+    --text-title-color: #000;
 
-    --text-title-color-light: #000;
-    --text-title-color-dark: #eaeded;
+    --bg-navbar-color: #ffff;
+    --bg-hover-color: rgba(0, 0, 0, 0.08);
 
-    --color-hover-light: rgba(0, 0, 0, 0.03);
-    --color-hover-dark: rgba(255, 255, 255, 0.03);
+    --bg-form-color: #ffff;
+    --shadow-form-color: 0px 0px 0px 1px rgba(26, 26, 26, 0.1);
 
-    --bg-color-light: #ffff;
-    --bg-color-dark-height: #303030;
-    --bg-color-dark-short: #242526;
+    --header-color: #ffff;
+    --footer-color: #ffff;
+    
+    --border-color: rgba(0, 0, 0, 0.1);
+    --border-input-color: #ccc;
 
-    --bg-form-color-light: #ffff;
-    --bg-form-color-dark: #21252c;
+    --text-hover-color: rgb(0 ,0 , 0);
+    --text-hover-color-light: rgb(0, 0, 0);
+    --text-hover-color-dark: rgb(255, 255, 255);
 
-    --header-color-dark: #232f3e;
-    --footer-color-dark: #232f3e;
+    --focus-input-shadow-color: rgb(59 73 223);
 
+    .dark {
+        --text-color: rgba(255, 255, 255, 0.5);;
+        // --text-title-color: #eaeded;
+        --text-title-color: #ffff;
+
+        --bg-navbar-color: #232f3e;
+        --bg-hover-color: rgba(255, 255, 255, 0.08);
+        --bg-form-color: #21252c;
+
+        --header-color: #232f3e;
+        --footer-color: #232f3e;
+
+        --border-color: rgb(84, 91, 100);
+        --border-input-color: #ffff;
+
+        --text-hover-color: rgb(255, 255, 255);
+
+        --focus-input-shadow-color: #ffff;
+
+    }
 }
 
 // Card

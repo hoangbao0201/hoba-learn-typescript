@@ -8,18 +8,20 @@ import {
     iconClose,
     iconLoading,
     iconLogin,
+    iconMagnifyingGlass,
     iconRegister,
 } from "../../../.public/iconSvg";
 import { ButtonDarkMode } from "./ButtonDarkMode/ButtonDarkMode";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { Link } from "react-router-dom";
+import { MenuSearch } from "../MenuSearch/MenuSearch";
 
 const cx = classnames.bind(styles);
 
 export const Header = () => {
-    const { state }: any = useContext(ThemeContext);
-
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+    const [isMenuSearchOpen, setIsMenuSearchOpen] = useState<boolean>(false);
+
     const [valueSearch, setValueSearch] = useState<string>("");
 
     const inputSearchRef = useRef<HTMLDivElement | any>(null);
@@ -28,14 +30,23 @@ export const Header = () => {
         setIsModalOpen(false);
     };
 
+    const handleMenuSearchClose = () => {
+        setIsMenuSearchOpen(false);
+    };
+
     const eventChangeValueSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setValueSearch(e.target.value);
+    };
+
+    const eventDeleteValueSearch = () => {
+        setValueSearch("");
+        inputSearchRef.current.focus();
     };
 
     return (
         <>
             <div className={cx("navheader")} />
-            <div className={cx("wrapper", `${state.dark ? "dark" : ""}`)}>
+            <div className={cx("wrapper")}>
                 <div className={cx("container")}>
                     <div className={cx("dev-form-row")}>
                         <div
@@ -51,28 +62,42 @@ export const Header = () => {
                             />
                         </a>
                     </div>
-                    <div className={cx("search")}>
+                    <div className={cx("dev-form-row")}>
                         <div className={cx("grid-search")}>
+                            <div
+                                className={cx(
+                                    "button-search",
+                                )}
+                                onClick={() => setIsMenuSearchOpen(true)}
+                            >
+                                {iconMagnifyingGlass}
+                            </div>
                             <input
                                 ref={inputSearchRef}
                                 className={cx(
                                     "search-input",
-                                    `${valueSearch.length > 0 && "focusInput"}`
                                 )}
                                 placeholder="Tìm kiếm"
                                 value={valueSearch}
                                 onChange={eventChangeValueSearch}
                             />
                             {valueSearch && (
-                                <div className={cx("search-input-icon")}>
-                                    <p className={cx("close")} onClick={() => setValueSearch("")}>{iconClose}</p>
-                                    {/* <p className={cx("loading")}>{iconLoading}</p> */}
+                                <div className={cx("grid-search-icon-action")}>
+                                    {/* <p
+                                        className={cx("close")}
+                                        onClick={eventDeleteValueSearch}
+                                    >
+                                        {iconClose}
+                                    </p> */}
+                                    <p className={cx("loading")}>
+                                        {iconLoading}
+                                    </p>
                                 </div>
                             )}
                         </div>
                         <ButtonDarkMode />
                     </div>
-                    <div className={cx("action")}>
+                    <div className={cx("accout")}>
                         <div className={cx("grid-item")}>
                             <Link className={cx("item")} to="/auth/login">
                                 <span className={cx("item-icon")}>
@@ -95,6 +120,10 @@ export const Header = () => {
                     <Navbar
                         isModalOpen={isModalOpen}
                         handleModalClose={handleModalClose}
+                    />
+                    <MenuSearch
+                        isModalOpen={isMenuSearchOpen}
+                        handleModalClose={handleMenuSearchClose}
                     />
                 </div>
             </div>

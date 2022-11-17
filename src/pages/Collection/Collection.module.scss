@@ -1,0 +1,52 @@
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 20px auto;
+    display: block;
+}
+
+//  list item
+
+.list-image {
+    column-gap: 16px;
+    column-width: 252px;
+}
+
+.grid-item {
+    // padding: 0px 8px 16px 8px;
+    margin-bottom: 20px;
+}
+
+.item-image {
+    overflow: hidden;
+    border-radius: 8px;
+
+    .image {
+        width: 100%;
+        display: block;
+    }
+}
+
+// Response
+
+@media (min-width: 850px) and (max-width: 1100px) {
+    .list-image {
+        column-width: 200px;
+    }
+}
+@media (min-width: 560px) and (max-width: 900px) {
+    .list-image {
+        column-width: 180px;
+    }
+}
+@media (min-width: 0px) and (max-width: 560px) {
+    .list-image {
+        column-width: 150px;
+    }
+}

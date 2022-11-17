@@ -14,7 +14,7 @@ import styles from "./Register.module.scss";
 const cx = classNames.bind(styles);
 
 export const Register = () => {
-    const { state } : any = useContext(ThemeContext);
+    const { state }: any = useContext(ThemeContext);
 
     const [isShow, setIsShow] = useState<boolean>(false);
     const [dataForm, setDataForm] = useState({
@@ -36,6 +36,17 @@ export const Register = () => {
         console.log(dataForm);
     };
 
+    // Event login
+    const eventLoginGoogle = () => {
+        console.log("Login Google")
+    }
+    const eventLoginGithub = () => {
+        console.log("Login Github")
+    }
+    const eventLoginFacebook = () => {
+        console.log("Login Facebook")
+    }
+
     return (
         <div className={cx("wrapper", `${state.dark && "dark"}`)}>
             <div className={cx("container")}>
@@ -47,24 +58,36 @@ export const Register = () => {
                         />
                     </div>
                     <Button
+                        boxSd={state.dark && "rgba(255, 255, 255, 0.4)"}
                         bg="#df4930"
                         bgHv="#cd452e"
                         color="#ffff"
                         size="15px"
+                        onClick={eventLoginGoogle}
                     >
                         <i className={cx("button-icon")}>{iconGoogle}</i>
                         Continute width Google
                     </Button>
-                    <Button size="15px">
+                    <Button
+                        boxSd={state.dark && "rgba(255, 255, 255, 0.4)"}
+                        size="15px"
+                        onClick={eventLoginFacebook}
+                    >
                         <i className={cx("button-icon")}>{iconFacebook}</i>
                         Continute width Facebook
                     </Button>
-                    <Button bg="#24292e" bgHv="#000" size="15px">
+                    <Button
+                        boxSd={state.dark && "rgba(255, 255, 255, 0.4)"}
+                        bg="#24292e"
+                        bgHv="#000"
+                        size="15px"
+                        onClick={eventLoginGithub}
+                    >
                         <i className={cx("button-icon")}>{iconGithub}</i>
                         Continute width Github
                     </Button>
 
-                    <div className={cx("devider-double")}></div>
+                    <div className={cx("devider")}></div>
 
                     <div className={cx("dev-form-group")}>
                         <div className={cx("dev-form-tilte", "form-title")}>

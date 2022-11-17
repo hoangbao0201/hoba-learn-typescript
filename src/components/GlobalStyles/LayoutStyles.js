@@ -21,19 +21,20 @@ export const Devider = styled.div`
 `
 
 export const Button = styled.div`
+    -webkit-user-select: none;
     width: ${({ width }) => (width ? width : "100%")};
     color: ${({ color }) => (color ? color : "#ffff")};
     background: ${({ bg }) => (bg ? bg : "#3b49df")};
     padding: ${({ padding }) => (padding ? padding : "15px 10px")};
     border-radius: ${({ borderRd }) => (borderRd ? borderRd : "4px")};
     font-size: ${({ size }) => (size ? size : "18px")};
-    font-weight: ${({ fontW }) => (fontW ? fontW : "600")};;
+    font-weight: ${({ fontW }) => (fontW ? fontW : "600")};
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin: 10px 0px;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 1px ${({ boxSd }) => (boxSd ? boxSd : "rgba(0, 0, 0, 0.1)")};
     transition: 0.2s;
 
     &:hover {

@@ -2,15 +2,10 @@
 .wrapper {
     width: 100%;
     padding: 50px 0px;
-    border-top: 1px solid rgb(0, 0, 0, 0.1);
-    background-color: #e5e5e5;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--footer-color);
 
     transition: 0.2s;
-
-    &.dark {
-        border-top: 1px solid rgb(84, 91, 100);
-        background-color: var(--footer-color-dark);
-    }
 }
 
 .container {
@@ -35,7 +30,7 @@
     transition: 0.2s;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.08);
+        background-color: var(--bg-hover-color);
     }
     .image-logo {
         height: 50px;
@@ -43,25 +38,12 @@
     }
 }
 
-.dark {
-    .grid-logo {
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.08);
-        }
-    }
-}
-
 // Text
 
 .copytright {
-    text-align: center;
+    color: var(--text-title-color);
     font-size: 18px;
-}
-
-.dark {
-    .copytright {
-        color: #ffff;
-    }
+    text-align: center;
 }
 
 // Response
