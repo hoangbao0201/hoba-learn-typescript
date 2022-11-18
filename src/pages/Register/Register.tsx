@@ -25,7 +25,7 @@ export const Register = () => {
     });
 
     useEffect(() => {
-        document.title = "Đăng kí - Hoangbao"
+        document.title = "Đăng kí - HoangBao"
     }, [])
 
     // Handle

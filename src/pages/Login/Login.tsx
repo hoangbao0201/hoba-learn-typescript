@@ -23,7 +23,7 @@ export const Login = () => {
     });
 
     useEffect(() => {
-        document.title = "Đăng nhập - Hoangbao"
+        document.title = "Đăng nhập - HoangBao"
     }, [])
 
     // Handle

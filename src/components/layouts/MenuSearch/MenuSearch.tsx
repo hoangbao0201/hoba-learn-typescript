@@ -27,6 +27,14 @@ export const MenuSearch = ({
     const navbarRef = useRef<HTMLDivElement>(null);
     useOnclickOutside(navbarRef, handleModalClose);
 
+    useEffect(() => {
+        // if(isModalOpen) {
+        //     inputSearchRef.current.focus();
+        //     eventDeleteValueSearch()
+        // }
+        console.log(isModalOpen)
+    }, [isModalOpen])
+
     const eventChangeValueSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setValueSearch(e.target.value);
     };
@@ -49,10 +57,7 @@ export const MenuSearch = ({
             >
                 <div className={cx("container")}>
                     <div className={cx("navbar-header")}>
-                        {/* <img
-                            className={cx("image-logo")}
-                            src="/images/logo-hb.png"
-                        /> */}
+                        <span className={cx("header-title")}>Tìm kiếm</span>
                         <button
                             className={cx("button-close")}
                             onClick={handleModalClose}
@@ -65,7 +70,6 @@ export const MenuSearch = ({
                             <input
                                 ref={inputSearchRef}
                                 className={cx(
-                                    // "search-input",
                                     "dev-form-input",
                                     "form-input",
                                 )}

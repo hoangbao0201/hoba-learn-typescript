@@ -23,11 +23,17 @@
 
 // Header navbar
 
+.header-title {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text-title-color);
+}
+
 .navbar-header {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 
 // Logo
@@ -93,7 +99,8 @@
     background-color: transparent !important;
 
     &:focus {
-        box-shadow: 0px 0px 0px 1px var(--focus-input-shadow-color) inset !important;
+        border-color: var(--focus-input-border-color) !important;
+        box-shadow: var(--focus-input-box-shadow-color) !important;
     }
 }
 
