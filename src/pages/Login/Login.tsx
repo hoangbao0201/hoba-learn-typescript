@@ -61,6 +61,7 @@ export const Login = () => {
                         color="#ffff"
                         size="15px"
                         onClick={eventLoginGoogle}
+                        className={cx("buton-login")}
                     >
                         <i className={cx("button-icon")}>{iconGoogle}</i>
                         Continute width Google
@@ -69,6 +70,7 @@ export const Login = () => {
                         boxSd={state.dark && "rgba(255, 255, 255, 0.4)"}
                         size="15px"
                         onClick={eventLoginFacebook}
+                        className={cx("buton-login")}
                     >
                         <i className={cx("button-icon")}>{iconFacebook}</i>
                         Continute width Facebook
@@ -79,6 +81,7 @@ export const Login = () => {
                         bgHv="#000"
                         size="15px"
                         onClick={eventLoginGithub}
+                        className={cx("buton-login")}
                     >
                         <i className={cx("button-icon")}>{iconGithub}</i>
                         Continute width Github
@@ -126,6 +129,7 @@ export const Login = () => {
                         bgHv="#0096f2"
                         size="15px"
                         onClick={eventSubmitForm}
+                        className={cx("buton-login")}
                     >
                         Continue
                     </Button>

@@ -59,12 +59,12 @@
 // icon show and hiddent password
 
 .icon-eye-password {
-    top: 0px;
+    top: 50%;
     right: 8px;
     padding: 5px;
     cursor: pointer;
     border-radius: 50%;
-    transform: translateY(25%);
+    transform: translateY(-50%);
     
     position: absolute;
     display: flex;
@@ -113,7 +113,19 @@
 
 @media (max-width: 640px) {
     .image-logo {
-        height: 60px !important;
+        height: 50px !important;
+    }
+    .buton-login {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .form-title {
+        font-size: 15px !important;
+    }
+    .form-input {
+        font-size: 16px !important;
+        height: 34px !important;
+        padding: 6px 15px !important;
     }
 }
 

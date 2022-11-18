@@ -65,8 +65,9 @@ export const MenuSearch = ({
                             <input
                                 ref={inputSearchRef}
                                 className={cx(
-                                    "search-input",
-                                    `${valueSearch.length > 0 && "focusInput"}`
+                                    // "search-input",
+                                    "dev-form-input",
+                                    "form-input",
                                 )}
                                 placeholder="Tìm kiếm"
                                 value={valueSearch}

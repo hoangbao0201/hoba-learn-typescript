@@ -3,8 +3,6 @@
     max-width: 500px;
     
     top: 0px;
-    // top: var(--header-height);
-
     bottom: 0px;
     left: 0px;
     background-color: var(--bg-navbar-color);
@@ -90,13 +88,22 @@
     }
 }
 
+.form-input {
+    color: var(--text-title-color) !important;
+    background-color: transparent !important;
+
+    &:focus {
+        box-shadow: 0px 0px 0px 1px var(--focus-input-shadow-color) inset !important;
+    }
+}
+
 .grid-search-icon-action {
-    top: 0px;
+    top: 50%;
     right: 8px;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    transform: translateY(22%);
+    transform: translateY(-50%);
 
     &:hover {
         background-color: var(--bg-hover-color);
@@ -110,5 +117,15 @@
     }
     .loading {
         animation: spin 0.8s infinite linear;
+    }
+}
+
+// Response
+
+@media (max-width: 640px) {
+    .form-input {
+        font-size: 16px !important;
+        height: 34px !important;
+        padding: 6px 15px !important;
     }
 }

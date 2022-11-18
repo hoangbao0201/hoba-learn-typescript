@@ -88,12 +88,12 @@
 }
 
 .grid-search-icon-action {
-    top: 0px;
+    top: 50%;
     right: 8px;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    transform: translateY(30%);
+    transform: translateY(-50%);
 
     &:hover {
         background-color: var(--bg-hover-color);
@@ -196,5 +196,16 @@
     }
     .button-search {
         display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        .wrapper {
+            --header-height: 50px;
+        }
+    }
+    .image-logo {
+        height: 35px !important;
     }
 }
