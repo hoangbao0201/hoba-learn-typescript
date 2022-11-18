@@ -86,7 +86,11 @@
 // Button icon
 
 .button-icon {
-    margin-right: 10px;
+    left: 0px;
+    padding: 0px 15px;
+    position: absolute;
+    border-right: 1px solid #ccc;
+    
     svg {
         width: 20px;
         display: block;
@@ -119,6 +123,10 @@
     .buton-login {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
+
+        svg {
+            width: 16px !important;
+        }
     }
     .form-title {
         font-size: 15px !important;

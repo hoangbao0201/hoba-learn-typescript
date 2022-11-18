@@ -22,6 +22,7 @@ export const Devider = styled.div`
 
 export const Button = styled.div`
     -webkit-user-select: none;
+    position: relative;
     width: ${({ width }) => (width ? width : "100%")};
     color: ${({ color }) => (color ? color : "#ffff")};
     background: ${({ bg }) => (bg ? bg : "#3b49df")};

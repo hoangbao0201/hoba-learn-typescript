@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { ChangeEvent, useContext, useState } from "react";
+import { ChangeEvent, useContext, useEffect, useState } from "react";
 import { Button } from "../../components/GlobalStyles/LayoutStyles";
 import { ThemeContext } from "../../context/ThemeContext";
 import {
@@ -22,6 +22,11 @@ export const Login = () => {
         password: "",
     });
 
+    useEffect(() => {
+        document.title = "Đăng nhập - Hoangbao"
+    }, [])
+
+    // Handle
     const eventChangeDataForm = (e: ChangeEvent<HTMLInputElement>) => {
         setDataForm({
             ...dataForm,
